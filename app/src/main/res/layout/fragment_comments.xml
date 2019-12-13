@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/img_header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="¡Cuentanos que sucede!"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/botones_inicio">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15dp"
+                android:text="Para:"
+                android:textColor="#9AC8E3"
+                android:fontFamily="@font/comfortaa"
+                />
+            <EditText
+                android:id="@+id/txt_wecorreo"
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:maxEms="1"
+                android:text="weappInc.help@gmail.com"
+                android:layout_marginLeft="10dp"
+                android:textColor="#E1E1E0"
+                android:enabled="false"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:text="Asunto:"
+                android:textColor="#9AC8E3"
+                android:fontFamily="@font/comfortaa"
+                />
+            <EditText
+                android:id="@+id/txt_asunto"
+                android:fontFamily="@font/comfortaa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:hint="Problema o sugerencia"
+                android:maxLines="1"
+                android:textColorHint="#969695"
+                android:layout_marginLeft="10dp"
+                android:textColor="#E1E1E0"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:text="Descripción:"
+                android:textColor="#9AC8E3"
+                android:fontFamily="@font/comfortaa"
+                />
+            <EditText
+                android:id="@+id/txt_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:fontFamily="@font/comfortaa"
+                android:maxLines="5"
+                android:hint="Breve descripción."
+                android:textColorHint="#969695"
+                android:layout_marginLeft="10dp"
+                android:textColor="#E1E1E0"
+                />
+        </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="55dp"
+        android:background="@drawable/botones_rellenados"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Enviar"
+        android:textColor="#FFFFFF" />
+
+
+
+
+
+</LinearLayout>
+
+</RelativeLayout>

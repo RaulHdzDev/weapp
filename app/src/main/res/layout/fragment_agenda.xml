@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272727"
+    >
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0873BA"
+        android:padding="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:layout_width="397dp"
+        android:layout_height="42dp"
+        android:background="@drawable/blanco"
+        app:layout_constraintBottom_toBottomOf="@+id/textView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.213"
+        android:drawableLeft="@drawable/busco"
+        android:drawableRight="@drawable/opc"
+        android:hint="    Buscar contactos"
+        android:textColorHint="#343434"
+        android:padding="5dp"
+        android:textColor="#343434"
+        android:fontFamily="@font/comfortaa"
+        />
+
+
+    <ScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/tx_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                android:drawableLeft="@drawable/persona"
+                android:fontFamily="@font/comfortaa_bold"
+                android:hint="@string/txt_nombre"
+                android:textColor="#fff"
+                android:textColorHighlight="#0827be"
+                android:textColorHint="#80ffffff"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/tx_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/celular"
+                android:fontFamily="@font/comfortaa_bold"
+                android:hint="@string/txt_telefono"
+                android:inputType="number"
+                android:textColor="#fff"
+                android:maxLines="1"
+                android:textColorHighlight="#0827be"
+                android:textColorHint="#80ffffff"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/tx_empresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/xz"
+                android:fontFamily="@font/comfortaa_bold"
+                android:hint=" Empresa"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#fff"
+                android:textColorHighlight="#0827be"
+                android:textColorHint="#80ffffff"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/tx_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/email"
+                android:fontFamily="@font/comfortaa_bold"
+                android:hint="@string/txt_correo"
+                android:inputType="textEmailAddress"
+                android:textColor="#fff"
+                android:textColorHighlight="#0827be"
+                android:textColorHint="#80ffffff"
+                android:textSize="20dp"
+                android:maxLines="1"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@drawable/azul"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Guardar"
+                    android:textSize="25dp"
+
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/azul"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:text="Buscar"
+                    android:textSize="25dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_marginTop="15dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/blanco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        tools:srcCompat="@tools:sample/avatars[10]" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

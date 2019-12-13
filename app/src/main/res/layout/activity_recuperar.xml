@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#454545"
+    tools:context=".Recuperar">
+
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+
+        />
+    <LinearLayout
+        android:layout_below="@+id/imagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="Recuperar contraseña"
+
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="27dp"
+            android:paddingTop="25dp"
+            />
+
+
+
+        <EditText
+            android:id="@+id/recEmail"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/botontrans"
+            android:hint="Correo electronico"
+            android:textColorHint="#fff"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/comfortaa_light"
+            android:drawableLeft="@drawable/email"
+            />
+
+        <Button
+            android:onClick="send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondoazul"
+            android:layout_margin="15dp"
+            android:text="Recuperar"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:fontFamily="@font/comfortaa_bold"
+            android:layout_gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

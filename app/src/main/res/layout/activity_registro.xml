@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#272727"
+    tools:context=".Registro">
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+
+        />
+    <LinearLayout
+        android:layout_below="@+id/imagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa_bold"
+            android:text="REGISTRARSE"
+
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="27dp"
+            android:paddingTop="25dp"
+            />
+
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/botontrans"
+            android:drawableLeft="@drawable/persona"
+            android:fontFamily="@font/comfortaa_light"
+            android:hint="NOMBRE"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/botontrans"
+            android:drawableLeft="@drawable/saxz"
+            android:fontFamily="@font/comfortaa_light"
+            android:hint="CONTRASEÑA"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/botontrans"
+            android:drawableLeft="@drawable/email"
+            android:fontFamily="@font/comfortaa_light"
+            android:gravity="center"
+            android:hint="EMAIL"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="15dp" />
+
+
+        <EditText
+            android:id="@+id/txtTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/botontrans"
+            android:drawableLeft="@drawable/celular"
+            android:fontFamily="@font/comfortaa_light"
+            android:hint="TELEFONO"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textColorHint="#fff"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="@drawable/fondoazul"
+            android:fontFamily="@font/comfortaa_bold"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="CREAR CUENTA"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>

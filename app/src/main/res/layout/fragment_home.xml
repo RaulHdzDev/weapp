@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/back_clima"
+                >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txtcity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:text="Ubicacion"
+                        android:textColor="#FFFF"
+                        android:textSize="26dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constrainedHeight="true"
+                        app:layout_constrainedWidth="true"/>
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="60dp"
+                            android:layout_gravity="end"
+                            android:background="@drawable/ic_pool_black_24dp">
+                        </ImageView>
+
+                    <TextView
+                        android:id="@+id/txtCelsius"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:text="Grados°"
+                        android:textColor="#FFFF"
+                        android:textSize="46dp"
+                        />
+
+                        <TextView
+                            android:id="@+id/txtDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="7dp"
+                            android:fontFamily="@font/comfortaa_bold"
+                            android:text="humedad"
+                            android:textColor="#FFFF"
+                            android:textSize="26dp"
+                            />
+
+
+                    </LinearLayout>
+            </FrameLayout>
+
+
+            <Button
+                android:id="@+id/btn_perfil"
+                android:background="@drawable/botones_inicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/comfortaa"
+                android:textColor="#FFFF"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/img_perfil"
+                android:padding="10dp"
+                android:text="  Mi Perfil"
+                android:textAlignment="viewStart">
+            </Button>
+
+            <Button
+                android:id="@+id/btn_o2"
+                android:background="@drawable/botones_inicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/comfortaa"
+                android:textColor="#FFFF"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/img_xd"
+                android:padding="10dp"
+                android:text="  Pendiente"
+                android:textAlignment="viewStart">
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#40FFFFFF"
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:textColor="#FFFF"
+                    android:textSize="20dp"
+
+                    android:text="  ¿Tienes preguntas?"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/comfortaa"
+                    android:textColor="#0873BA"
+                    android:textSize="18dp"
+                    android:padding="10dp"
+                    android:textAlignment="viewStart"
+                    android:text="Envíanos un mensaje"/>
+                </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_help"
+                        android:clickable="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/comfortaa"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/botones_rellenados"
+                        android:text="Enviar"
+                        />
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
