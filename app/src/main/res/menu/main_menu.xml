@@ -8,7 +8,7 @@
         android:id="@+id/action_agenda"
         android:enabled="true"
         android:icon="@drawable/ic_perm_contact_calendar_white_24dp"
-        android:title="Agenda"
+        android:title="Perfil"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/action_home"
