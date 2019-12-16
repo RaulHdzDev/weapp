@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         switch (menuItem.getItemId()){
 
             case R.id.action_home:
-                Toast.makeText(this,"¡BIENVENIDO DE NUEVO!",Toast.LENGTH_SHORT).show();
+
                 draw(2 );
                 lin_id.setX(bottomNavigationView.mFirstCurveControlPoint1.x);
                 fab.setVisibility(View.GONE);
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 break;
 
             case R.id.action_contenedores:
-                Toast.makeText(this,"¡TUS CONTENEDORES!",Toast.LENGTH_SHORT).show();
+
                 draw();
                 lin_id.setX(bottomNavigationView.mFirstCurveControlPoint1.x);
                 fab.setVisibility(View.VISIBLE);
@@ -79,13 +79,13 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 break;
 
             case R.id.action_agenda:
-                Toast.makeText(this,"¡WE AGENDA!",Toast.LENGTH_SHORT).show();
+
                 draw(6);
                 lin_id.setX(bottomNavigationView.mFirstCurveControlPoint1.x);
                 fab.setVisibility(View.GONE);
                 fab1.setVisibility(View.GONE);
                 fab2.setVisibility(View.VISIBLE);
-                fragmentclick = new Agenda_fragment();
+                fragmentclick = new Perfil_fragment();
                 drawAnimation(fab2);
                 break;
         }

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:background="@drawable/headers"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        >
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Name"
+        android:textAlignment="center"
+        android:fontFamily="@font/comfortaa_bold"
+        android:textColor="#ffff"/>
+    </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+                <FrameLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:background="@drawable/azul">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Capacidad:"
+                        android:fontFamily="@font/comfortaa_light"
+                        android:textColor="#ffff"
+                        />
+                        <TextView
+                            android:id="@+id/txt_capacidad"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="145 Lts."
+                            android:textSize="30dp"
+                            android:fontFamily="@font/comfortaa_light"
+                            android:textColor="#ffff"
+                            />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:background="@drawable/azul">
+                    <LinearLayout
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Temperatura:"
+                            android:fontFamily="@font/comfortaa_light"
+                            android:textColor="#ffff"
+                            />
+                        <TextView
+                            android:id="@+id/txt_temp"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="28 C°"
+                            android:textSize="30dp"
+                            android:fontFamily="@font/comfortaa_light"
+                            android:textColor="#ffff"
+                            />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+            </ScrollView>
+
+
+        </FrameLayout>
+
+            <FrameLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/colorAccent"
+                    android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Acerca de tu contenedor."
+                    android:textAlignment="center"
+                    android:fontFamily="@font/comfortaa_bold"
+                    android:textColor="#ffff"/>
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Marca: "
+                        android:fontFamily="@font/comfortaa_light"
+                        android:textColor="#ffff"/>
+                    <TextView
+                        android:id="@+id/txt_marca"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Rotoplas"
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:textSize="23dp"
+                        android:textColor="#ffff"/>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Capacidad Máxima: "
+                        android:fontFamily="@font/comfortaa_light"
+                        android:textColor="#ffff"/>
+                    <TextView
+                        android:id="@+id/txtcapacidad"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="500 Lts."
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:textSize="23dp"
+                        android:textColor="#ffff"/>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Altura: "
+                        android:fontFamily="@font/comfortaa_light"
+                        android:textColor="#ffff"/>
+                    <TextView
+                        android:id="@+id/txt_altura"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="2.45 mts."
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:textSize="23dp"
+                        android:textColor="#ffff"/>
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Diametro: "
+                        android:fontFamily="@font/comfortaa_light"
+                        android:textColor="#ffff"/>
+                    <TextView
+                        android:id="@+id/txt_diametro"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="0.45 mts."
+                        android:fontFamily="@font/comfortaa_bold"
+                        android:textSize="23dp"
+                        android:textColor="#ffff"/>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/azul"
+                android:clickable="true"
+                android:layout_gravity="end">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/comfortaa_light"
+                        android:textAlignment="center"
+                        android:textColor="#ffff"
+                        android:text="Actualizar"/>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    </FrameLayout>
+</LinearLayout>
