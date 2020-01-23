@@ -13,14 +13,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class Agenda_fragment extends Fragment{
-EditText etno,etem,etcor,etetel;
-protected void onCcreate(Bundle savedInstanceStat){
-    super.onCreate(savedInstanceStat);
+public class Agenda_fragment extends Fragment {
+    EditText etno, etem, etcor, etetel;
 
-}
+    protected void onCcreate(Bundle savedInstanceStat) {
+        super.onCreate(savedInstanceStat);
 
-
+    }
 
 
 }
