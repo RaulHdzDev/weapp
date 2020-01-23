@@ -90,7 +90,7 @@ public class Inicio_fragment extends Fragment {
 
 
         // perfil
-        btnPerfil = (Button) vista.findViewById(R.id.btn_perfil);
+
         btnHelp = (Button) vista.findViewById(R.id.btn_help);
 
 
@@ -106,7 +106,7 @@ public class Inicio_fragment extends Fragment {
         //txtDescription.setText(String.valueOf(datosdeClima.getDesc()));
         //txtCelsius.setText(String.valueOf(datosdeClima.getGrados()));
 
-        btnPerfil.setOnClickListener(new View.OnClickListener() {
+        /*btnPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -119,7 +119,7 @@ public class Inicio_fragment extends Fragment {
                         .addToBackStack(null)
                         .commit();
             }
-        });
+        });*/
         // comentarios
         btnHelp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -144,3 +144,4 @@ public class Inicio_fragment extends Fragment {
     }
 
 }
+

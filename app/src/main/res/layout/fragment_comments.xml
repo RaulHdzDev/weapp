@@ -47,6 +47,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 android:layout_marginLeft="10dp"
                 android:textSize="15dp"
                 android:text="Para:"
@@ -62,6 +63,7 @@
                 android:maxEms="1"
                 android:text="weappInc.help@gmail.com"
                 android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:textColor="#E1E1E0"
                 android:enabled="false"/>
             <TextView
@@ -77,6 +79,7 @@
             <EditText
                 android:id="@+id/txt_asunto"
                 android:fontFamily="@font/comfortaa"
+                android:layout_marginRight="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
@@ -100,6 +103,8 @@
                 android:id="@+id/txt_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="10dp"
                 android:textSize="20dp"
                 android:fontFamily="@font/comfortaa"
                 android:maxLines="5"
