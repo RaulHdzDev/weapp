@@ -27,7 +27,9 @@ import com.google.firebase.auth.FirebaseAuth
                         .addOnCompleteListener(this){
                             task ->
                             if (task.isSuccessful){
+                                Toast.makeText(this,"Se envió email con la contrasela al correo", Toast.LENGTH_SHORT).show()
                                 startActivity(Intent(this,Iniciosesion::class.java))
+                                finish()
                             }
                             else{
                                 Toast.makeText(this,"Error en al enviar el email", Toast.LENGTH_LONG).show()
